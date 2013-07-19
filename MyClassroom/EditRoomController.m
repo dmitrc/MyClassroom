@@ -66,6 +66,14 @@
     newDesk.tag = [deskLocations count]+100;
     //NSLog(@"%i",[deskLocations count]);
     
+    if (newDesk.tag > 136)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"You can't add more than 35 desks in the classroom! (and, speaking sincerely, you've got no space left on the screen)..\n Please, try changing size of existing desks or delete some desks and try again."  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alert show];
+        return;
+    }
+    
+    
     [self.view insertSubview:newDesk atIndex:1];
     
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:deskLocations];

@@ -30,6 +30,8 @@
  IDEAS FOR FUTURE UPDATES:
     1. Notes for students
     2. Ascending or descending sort
- 
+    3. Add student/desk by dragging them from he view.
+    4. Second click on help to dismiss it, timer = 10 sec.
+    5. ...
  
 */
